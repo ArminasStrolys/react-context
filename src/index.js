@@ -1,10 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/app/App';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./components/app/App";
+import { AppProvider } from "./context/TasksContext.js";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AppProvider>
+      <App />
+    </AppProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
