@@ -13,6 +13,7 @@ const Tasks = () => {
             <AddTask />
             {tasks.length && tasks.map((task, i) => <Task
                 key={i}
+                id={task.id}
                 title={task.title}
                 desc={task.desc}
             />)}
